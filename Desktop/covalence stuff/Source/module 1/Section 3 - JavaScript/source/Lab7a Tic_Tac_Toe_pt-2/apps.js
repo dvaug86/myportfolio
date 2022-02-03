@@ -123,8 +123,10 @@ function cellClicked() {
                 
                 continue;
             }
-                if (a === b && b === c) {
-                 alert(cells[a].textContent + 'Wins!');
+                if (a === 'Me' && a===b && b === c) {
+                 alert( 'I win');
+                }else{
+                    alert ('You win')
                
             }
             else {
