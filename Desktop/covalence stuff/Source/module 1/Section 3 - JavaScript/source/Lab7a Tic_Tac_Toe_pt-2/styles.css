@@ -1,0 +1,38 @@
+#board {
+    padding-top: 3em;
+    text-align: center;
+}
+
+
+
+.row {
+    
+    margin: 0 auto;
+    width: 302px;
+    clear: both;
+}
+
+.row > div{ 
+    float: left;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    line-height: 100px
+}
+.leftL{
+    border-bottom: red 1px solid;
+    border-right: green 1px solid;
+}
+
+.horiz{
+    border-bottom: black 1px solid;
+}
+
+.vert{
+    border-right: purple  1px solid;
+}
+
+.refButton{
+    clear: left;
+    float: left;
+}
