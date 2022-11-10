@@ -7,9 +7,9 @@
     "watch:build": "webpack -w",
     "watch:server": "nodemon dist/server.js",
     "dev": "npm-run-all --parallel watch:*",
-    "start": "node dist/server.js",
     "build": "webpack",
-    "postinstall": "webpack"
+    "start": "node dist/server.js"
+    
   },
   "keywords": [],
   "author": "",
@@ -35,7 +35,6 @@
     "react-router-dom": "^6.3.0",
     "sass": "^1.41.1",
     "sass-loader": "^12.1.0",
-    "serverless-mysql": "^1.5.4",
     "style-loader": "^3.2.1",
     "ts-loader": "^9.2.5",
     "typescript": "^4.4.3",
@@ -44,10 +43,6 @@
     "webpack-node-externals": "^3.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
-    "@typescript-eslint/parser": "^5.42.1",
-    "eslint": "^8.27.0",
-    "eslint-plugin-react": "^7.31.10",
     "nodemon": "^2.0.12",
     "npm-run-all": "^4.1.5"
   }
