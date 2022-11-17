@@ -15,7 +15,7 @@ const Login = (props: LoginProps) => {
         localStorage.setItem(TOKEN_KEY, token)
         history('/');
       })
-      .catch(() => console.log('oops!'));
+      .catch(() => console.log('login oops!'));
   }
 
   return (
