@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import PrivateRoute from './components/PrivateRoute';
+// import PrivateRoute from './components/PrivateRoute';
 import AdminPage from './views/AdminPage';
 import AdminPageDetails from './views/AdminPageDetails';
 import BadPage from './views/BadPage';
@@ -26,9 +26,9 @@ const App: React.FC<AppProps> = (props) => { //learn strongtyping props and come
                 <Route path='/resume' element={<ResumePage />} />                
                 {/* <Route path='/register' element={<RegisterPage />} />                 */}
                 {/* <Route path='/login' element={<LoginPage />} /> */}
-                <Route path='/admin' element={<PrivateRoute><AdminPage /></PrivateRoute>} />
-                <Route path='/compose' element={<PrivateRoute><ComposePage /></PrivateRoute>} />
-                <Route path='/admin/:detailid' element={<PrivateRoute><AdminPageDetails /></PrivateRoute>} />
+                <Route path='/admin' element={<AdminPage />} />
+                <Route path='/compose' element={<ComposePage />} />
+                <Route path='/admin/:detailid' element={<AdminPageDetails />} />
                 <Route path='*' element={<BadPage />} />
             </Routes>
         </BrowserRouter>
