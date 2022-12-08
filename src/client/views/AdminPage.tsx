@@ -22,9 +22,6 @@ const AdminPage: React.FC<AdminPageProps> = (props) => { //learn strongtyping pr
         <main className="conatiner">
             <div className="adminButtons">
             <Link className="btn btn-sm btn-primary" to={`/Compose`}>Compose</Link>
-            
-            
-
             </div>
             <section className="row">
                 {sites.map(site => (

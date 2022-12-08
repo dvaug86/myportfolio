@@ -22,9 +22,9 @@ export const Query = <T = any>(query: string, values?: any) => {
 }
 
 import portfolio_queries from './queries/portfolio_queries';
-// import users_queries from './queries/users_queries';
+import users_queries from './queries/users_queries';
 
 export default {
     portfolio_queries,
-    // users_queries
+    users_queries
 }
