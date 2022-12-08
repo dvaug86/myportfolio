@@ -9,8 +9,8 @@ const HomePage: React.FC<HomePageProps> = (props) => { //learn strongtyping prop
                 </div>
             </div>
             <section className='bodyOfPage mx-5'>
-                <img src="/myImages/tempPic.jpg" alt="tempProfile" className=' tempPic float-end h-30 shadow' />
-                <div className='info '>
+                <img src="/myImages/tempPic.jpg" alt="tempProfile" className=' tempPic float-end h-30 shadow ms-3' />
+                <div className='info  '>
                     <p className=' fs-3 '>
                         Hello My name is David Vaughan, and I am full stack engineer. I am a firm believer that one should always work at improve yourself.
                         One such way is to keep learning new things. On this site you will find projects of mine that I have created in my pursuit of learning the most cutting-edge techniques
