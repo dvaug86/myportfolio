@@ -1,10 +1,10 @@
-import {  Router } from 'express';
-import loginRouter from './login';
-import registerRouter from './register';
+// import {  Router } from 'express';
+// import loginRouter from './login';
+// import registerRouter from './register';
 
-const router = Router();
+// const router = Router();
 
-router.use('/login', loginRouter);
-router.use('/register', registerRouter);
+// router.use('/login', loginRouter);
+// router.use('/register', registerRouter);
 
-export default router;
+// export default router;
