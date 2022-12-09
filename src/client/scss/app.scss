@@ -22,7 +22,9 @@ $theme-colors: (
 );
 
 body{
-	background-color: 	#F0EAD6  !important;
+	background-image: url('/public/myImages/background.jpg') !important;
+	background-position: center;
+	background-size: 75%;
 }
 .portfolio{
 	background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%)
@@ -33,11 +35,5 @@ body{
 .indent{
 	text-indent: 35px;
 }
-
-// .tempPic{
-// 	float: left;
-// 	width: 250px;
-// }
-
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
