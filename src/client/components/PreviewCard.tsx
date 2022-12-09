@@ -7,17 +7,27 @@ import type { IWebsite } from '../utils/interfaces'
 const PreviewCard: React.FC<PreviewCardProps> = ({ site }) => { //learn strongtyping props and come up with an opinion
     return (
 
-        <div className="col-md-4">
+        <div className="col-md-4 ms-4">
             <article className="card mb-4  shadow"  >
                 <div className="card-body portfolio"  >
                     <h4 className="card-title" >{site.title}</h4>
                     <p className="card-text text-black-50 mb-2">{site.summary}</p>
-                    <div className="card-footer bg-transparent border-info d-flex align-items-center justify-content-between ">
-                        <span className="card-text text-black-50">Created: {moment(site._created).format("MMM Do, YYYY")}
+                    <div className=" bg-transparent border-top border-info d-flex align-items-center justify-content-start ">
+                        <span>
+                            <button className='btn btn-sm btn-primary mt-2 me-2' type='button' onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href = `${site?.websiteLink}`
+                            }} >
+                                Website Link
+                            </button>
+                            <button className='btn btn-sm btn-primary mt-2 ms-2' type='button' onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href = `${site?.githubLink}`
+                            }} >
+                                GitHub Link
+                            </button>
                         </span>
-                        <Link className="btn btn-sm btn-primary" to={`/details/${site.id}`}>Read More!</Link>
                     </div>
-
                 </div>
             </article>
         </div>

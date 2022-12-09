@@ -3,29 +3,28 @@ import * as React from 'react';
 const HomePage: React.FC<HomePageProps> = (props) => { //learn strongtyping props and come up with an opinion
     return (
         <main>
-
-            <div className=" pretend_card container rounded shadow m-5 ">
+            <div className=" pretend_card container rounded shadow m-auto p-5 ">
                 <div className="head">
-                    <div className=" flex-row  d-flex justify-content-center fs-1 mt-2 mb-5">
+                    <div className=" flex-row  d-flex justify-content-center align-content-top fs-1 ">
                         WELCOME!
                     </div>
                 </div>
                 <section >
-                    <img src="/myImages/tempPic.jpg" alt="tempProfile" className=' tempPic float-end h-30 shadow ms-3' />
+                    <img src="/myImages/tempPic.jpg" alt="tempProfile" className=' tempPic float-end h-30 shadow ms-4' />
                     <div className='info  '>
-                        <p className=' fs-3 '>
-                            Hello My name is David Vaughan, and I am full stack engineer. I am a firm believer that one should always work at improve yourself.
+                        <p className=' indent fs-3 mb-3 '>
+                            Hello My name is David Vaughan, and I am full stack engineer. I am a firm believer that one should always work at improving yourself.
                             One such way is to keep learning new things. On this site you will find projects of mine that I have created in my pursuit of learning the most cutting-edge techniques
-                            in the programming world. On this site you will find both a brief synopsis of what was covered in the project, as well as a link to my creation's github page (unless that information is privileged).  Please feel free to contact me with any questions, comments, or work inquiries.
+                            in the programming world. You will find with the portfolio link, both a brief synopsis of what was covered in the project, as well as a link to my creation's github page (unless that information is privileged).  Please feel free to contact me with any questions, comments, or work inquiries.
                         </p>
-                        <div className=' fs-3'>
+                        <div className=' d-flex align-items-bottom fs-3 pt-2 '>
                             Thanks and have a great day!
                         </div>
-                        <div className="d-flex align-items-center justify-content-between">
+                        <div className="d-flex align-items-bottom justify-content-between \">
                             <div className=' fs-3 mb-2'>
                                 David Vaughan
                             </div>
-                            <div className="links">
+                            <div className="links d-flex align-items-bottom">
                                 <a href="https://github.com/dvaug86">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" className=" bi bi-github me-2" viewBox="0 0 16 16">
                                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
