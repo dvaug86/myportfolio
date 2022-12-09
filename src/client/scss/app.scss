@@ -21,11 +21,12 @@ $theme-colors: (
 	// add any additional color below
 );
 
-body{
-	background-image: url('/public/myImages/background.jpg') !important;
-	background-position: center;
-	background-size: 75%;
-}
+// main{
+// 	background-image: url('/public/myImages/background.jpg') !important;
+// 	background-position: center;
+// 	background-size: 75%;
+// 	background-repeat: no-repeat;
+// }
 .portfolio{
 	background: linear-gradient(180.3deg, rgb(221, 221, 221) 5.5%, rgb(110, 136, 161) 90.2%)
 }
@@ -35,5 +36,15 @@ body{
 .indent{
 	text-indent: 35px;
 }
+.pretend_card{
+	background-color: #f8f9fa !important;
+}
+body { 
+	background: url('/public/myImages/background.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  }
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
