@@ -11,7 +11,9 @@ const PreviewCard: React.FC<PreviewCardProps> = ({ site }) => { //learn strongty
             <article className="card mb-4  shadow"  >
                 <div className="card-body portfolio"  >
                     <h4 className="card-title" >{site.title}</h4>
-                    <p className="card-text text-black-50 mb-2">{site.summary}</p>
+                    <p className="card-text text-black-50 indent mb-2">{site.summary}</p>
+                    <p className="card-text text-black-50  fw-bold mb-2 ">Skills: {site.assignment}</p>
+
                     <div className=" bg-transparent border-top border-info d-flex align-items-center justify-content-start ">
                         <span>
                             <button className='btn btn-sm btn-primary mt-2 me-2' type='button' onClick={(e) => {

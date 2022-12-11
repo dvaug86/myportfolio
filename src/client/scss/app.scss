@@ -21,18 +21,11 @@ $theme-colors: (
 	// add any additional color below
 );
 
-// main{
-// 	background-image: url('/public/myImages/background.jpg') !important;
-// 	background-position: center;
-// 	background-size: 75%;
-// 	background-repeat: no-repeat;
-// }
+
 .portfolio{
 	background: light;
 }
-.titleBand{
-	background: lightblue
-}
+
 .indent{
 	text-indent: 35px;
 }
@@ -46,5 +39,18 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
   }
+.resumeMain{
+	background-color: #f8f9fa !important;
 
+}
+.cards{
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .cards:hover{
+
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+}
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';

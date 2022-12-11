@@ -54,7 +54,7 @@ const ComposePage: React.FC<ComposePageProps> = (props) => { //learn strongtypin
                             onChange={e => setAssignment(e.target.value)}
                             rows={20}
                             className='form-control form-control-lg mb-2'
-                            placeholder='This is where my assignment is going'
+                            placeholder='skillz involved'
                         />
                         <label htmlFor="websiteLink">Website Link</label>
                         <input

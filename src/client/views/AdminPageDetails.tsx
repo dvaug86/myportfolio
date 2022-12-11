@@ -45,20 +45,7 @@ const AdminPageDetailsPage: React.FC<AdminPageDetailsPageProps> = (props) => { /
 
 
 
-    // const handleEdit = async (e: React.MouseEvent<HTMLButtonElement>) => {
-    //     e.preventDefault();
-    //     console.log({ title, summary, assignment, websiteLink, githubLink });
-    //     const res = await fetch(`api/summary/${detailid}`, {
-    //         method: 'PUT',
-    //         headers: {
-    //             'Content-Type': 'application/json'
-    //         },
-    //         body: JSON.stringify({ title, summary, assignment, websiteLink, githubLink })
-    //     });
-    //     const portfolioResult = await res.json();
-    //     console.log(portfolioResult);
-    //     history(`/admin`);
-    // }
+
     
     const handleDelete = async (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
@@ -85,7 +72,7 @@ const AdminPageDetailsPage: React.FC<AdminPageDetailsPageProps> = (props) => { /
                         <textarea
                             value={summary}
                             onChange={e => setSummary(e.target.value)}
-                            rows={10}
+                            rows={20}
                             className='form-control form-control-lg mb-2'
                             placeholder='This is where my summary is going'
                         />
@@ -93,9 +80,9 @@ const AdminPageDetailsPage: React.FC<AdminPageDetailsPageProps> = (props) => { /
                         <textarea
                             value={assignment}
                             onChange={e => setAssignment(e.target.value)}
-                            rows={20}
+                            rows={10}
                             className='form-control form-control-lg mb-2'
-                            placeholder='This is where my assignment is going'
+                            placeholder='Put skillz'
                         />
                         <label htmlFor="websiteLink">Website Link</label>
                         <input
