@@ -13,9 +13,7 @@ const HomePage: React.FC<HomePageProps> = (props) => { //learn strongtyping prop
                     <img src="/myImages/tempPic.jpg" alt="tempProfile" className=' tempPic float-end h-30 shadow ms-4' />
                     <div className='info  '>
                         <p className=' indent fs-3 mb-3 '>
-                            Hello My name is David Vaughan, and I am a full stack engineer. I am a firm believer that one should always work at improving yourself.
-                            One such way is to keep learning new things. On this site you will find projects of mine that I have created in my pursuit of learning cutting-edge techniques
-                            in the programming world. You will find with the portfolio link, both a synopsis of what was covered in each project, as well as a link to my creation's GitHub page (unless that information is privileged).  Please feel free to contact me with any questions, or work inquiries.
+                            Welcome to my old portfolio. I appologize if you reached this site via my resume. please check out my new portfolio website at <link rel="stylesheet" href="https://wwww.dvaughanportfolio.com" className='border-bottom'>here</link>
                         </p>
                         <div className=' d-flex align-items-bottom fs-3 pt-2 '>
                             Thanks and have a great day!
